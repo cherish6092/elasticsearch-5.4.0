@@ -1,0 +1,95 @@
+[2020-02-28T11:56:31,029][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: plugins directory [/Users/yundongjiutian/workspace6/src/elasticsearch-5.4.0/core/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:72) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) [main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) [main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:88) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [main/:?]
+[2020-02-28T11:56:31,042][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/yundongjiutian/workspace6/src/elasticsearch-5.4.0/core/plugins] not found
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:127) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) ~[main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) ~[main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:88) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[main/:?]
+Caused by: java.lang.IllegalStateException: plugins directory [/Users/yundongjiutian/workspace6/src/elasticsearch-5.4.0/core/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:72) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) ~[main/:?]
+	... 6 more
+[2020-02-28T11:58:17,790][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-02-28T11:58:17,875][INFO ][o.e.e.NodeEnvironment    ] [Q16kCRD] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [159.3gb], net total_space [233.4gb], spins? [unknown], types [apfs]
+[2020-02-28T11:58:17,875][INFO ][o.e.e.NodeEnvironment    ] [Q16kCRD] heap size [3.5gb], compressed ordinary object pointers [true]
+[2020-02-28T11:58:17,877][INFO ][o.e.n.Node               ] node name [Q16kCRD] derived from node ID [Q16kCRDnQeKDaBCRVY4FIw]; set [node.name] to override
+[2020-02-28T11:58:17,879][INFO ][o.e.n.Node               ] version[5.4.0-SNAPSHOT], pid[14468], build[Unknown/Unknown], OS[Mac OS X/10.14.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_181/25.181-b13]
+[2020-02-28T11:58:17,879][WARN ][o.e.n.Node               ] version [5.4.0-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-02-28T11:58:17,886][INFO ][o.e.p.PluginsService     ] [Q16kCRD] no modules loaded
+[2020-02-28T11:58:17,887][INFO ][o.e.p.PluginsService     ] [Q16kCRD] no plugins loaded
+[2020-02-28T11:58:19,639][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: Unsupported transport.type []
+	at org.elasticsearch.common.network.NetworkModule.getTransportSupplier(NetworkModule.java:213) ~[main/:?]
+	at org.elasticsearch.node.Node.<init>(Node.java:421) ~[main/:?]
+	at org.elasticsearch.node.Node.<init>(Node.java:242) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap$6.<init>(Bootstrap.java:242) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) [main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) [main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:88) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [main/:?]
+[2020-02-28T11:58:19,648][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: Unsupported transport.type []
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:127) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) ~[main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) ~[main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:88) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[main/:?]
+Caused by: java.lang.IllegalStateException: Unsupported transport.type []
+	at org.elasticsearch.common.network.NetworkModule.getTransportSupplier(NetworkModule.java:213) ~[main/:?]
+	at org.elasticsearch.node.Node.<init>(Node.java:421) ~[main/:?]
+	at org.elasticsearch.node.Node.<init>(Node.java:242) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap$6.<init>(Bootstrap.java:242) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) ~[main/:?]
+	... 6 more
+[2020-02-28T12:00:06,187][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-02-28T12:00:06,267][INFO ][o.e.e.NodeEnvironment    ] [Q16kCRD] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [159.2gb], net total_space [233.4gb], spins? [unknown], types [apfs]
+[2020-02-28T12:00:06,267][INFO ][o.e.e.NodeEnvironment    ] [Q16kCRD] heap size [3.5gb], compressed ordinary object pointers [true]
+[2020-02-28T12:00:06,269][INFO ][o.e.n.Node               ] node name [Q16kCRD] derived from node ID [Q16kCRDnQeKDaBCRVY4FIw]; set [node.name] to override
+[2020-02-28T12:00:06,269][INFO ][o.e.n.Node               ] version[5.4.0-SNAPSHOT], pid[14495], build[Unknown/Unknown], OS[Mac OS X/10.14.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_181/25.181-b13]
+[2020-02-28T12:00:06,269][WARN ][o.e.n.Node               ] version [5.4.0-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-02-28T12:00:11,096][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [aggs-matrix-stats]
+[2020-02-28T12:00:11,096][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [ingest-common]
+[2020-02-28T12:00:11,096][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [lang-expression]
+[2020-02-28T12:00:11,096][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [lang-groovy]
+[2020-02-28T12:00:11,097][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [lang-mustache]
+[2020-02-28T12:00:11,097][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [lang-painless]
+[2020-02-28T12:00:11,097][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [percolator]
+[2020-02-28T12:00:11,097][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [reindex]
+[2020-02-28T12:00:11,097][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [transport-netty3]
+[2020-02-28T12:00:11,097][INFO ][o.e.p.PluginsService     ] [Q16kCRD] loaded module [transport-netty4]
+[2020-02-28T12:00:11,098][INFO ][o.e.p.PluginsService     ] [Q16kCRD] no plugins loaded
+[2020-02-28T12:00:12,863][INFO ][o.e.d.DiscoveryModule    ] [Q16kCRD] using discovery type [zen]
+[2020-02-28T12:00:13,523][INFO ][o.e.n.Node               ] initialized
+[2020-02-28T12:00:13,523][INFO ][o.e.n.Node               ] [Q16kCRD] starting ...
+[2020-02-28T12:00:13,575][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[2020-02-28T12:00:13,729][INFO ][o.e.t.TransportService   ] [Q16kCRD] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2020-02-28T12:00:13,739][WARN ][o.e.b.BootstrapChecks    ] [Q16kCRD] initial heap size [268435456] not equal to maximum heap size [4294967296]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2020-02-28T12:00:16,805][INFO ][o.e.c.s.ClusterService   ] [Q16kCRD] new_master {Q16kCRD}{Q16kCRDnQeKDaBCRVY4FIw}{znVW0pPwSHar7avFFIvinA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2020-02-28T12:00:16,826][INFO ][o.e.h.n.Netty4HttpServerTransport] [Q16kCRD] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2020-02-28T12:00:16,829][INFO ][o.e.n.Node               ] [Q16kCRD] started
+[2020-02-28T12:00:16,834][INFO ][o.e.g.GatewayService     ] [Q16kCRD] recovered [0] indices into cluster_state
