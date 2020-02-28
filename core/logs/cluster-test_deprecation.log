@@ -1,0 +1,1 @@
+[2020-02-28T14:58:34,839][WARN ][o.e.d.r.RestRequest      ] Expected a boolean [true/false] for request parameter [pretty] but got [trure]
