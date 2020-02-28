@@ -31,14 +31,7 @@ import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.plugins.ActionPlugin;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Locale;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -104,8 +97,11 @@ public abstract class BaseRestHandler extends AbstractComponent implements RestH
             CollectionUtil.timSort(scoredParams, (a, b) -> {
                 // sort by distance in reverse order, then parameter name for equal distances
                 int compare = a.v1().compareTo(b.v1());
-                if (compare != 0) return -compare;
-                else return a.v2().compareTo(b.v2());
+                if (compare != 0) {
+                    return -compare;
+                } else {
+                    return a.v2().compareTo(b.v2());
+                }
             });
             if (first == false) {
                 message += ", ";
