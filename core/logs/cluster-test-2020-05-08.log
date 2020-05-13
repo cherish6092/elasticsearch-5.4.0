@@ -1,0 +1,52 @@
+[2020-05-08T12:24:06,382][INFO ][o.e.n.Node               ] [node-test] initializing ...
+[2020-05-08T12:24:06,508][INFO ][o.e.e.NodeEnvironment    ] [node-test] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [147.4gb], net total_space [233.4gb], spins? [unknown], types [apfs]
+[2020-05-08T12:24:06,508][INFO ][o.e.e.NodeEnvironment    ] [node-test] heap size [3.5gb], compressed ordinary object pointers [true]
+[2020-05-08T12:24:06,509][INFO ][o.e.n.Node               ] [node-test] node name [node-test], node ID [Q16kCRDnQeKDaBCRVY4FIw]
+[2020-05-08T12:24:06,510][INFO ][o.e.n.Node               ] [node-test] version[5.4.0-SNAPSHOT], pid[20941], build[Unknown/Unknown], OS[Mac OS X/10.14.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_181/25.181-b13]
+[2020-05-08T12:24:06,510][WARN ][o.e.n.Node               ] [node-test] version [5.4.0-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-05-08T12:24:11,013][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [aggs-matrix-stats]
+[2020-05-08T12:24:11,013][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [ingest-common]
+[2020-05-08T12:24:11,013][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-expression]
+[2020-05-08T12:24:11,013][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-groovy]
+[2020-05-08T12:24:11,013][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-mustache]
+[2020-05-08T12:24:11,013][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-painless]
+[2020-05-08T12:24:11,013][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [percolator]
+[2020-05-08T12:24:11,013][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [reindex]
+[2020-05-08T12:24:11,014][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [transport-netty3]
+[2020-05-08T12:24:11,014][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [transport-netty4]
+[2020-05-08T12:24:11,014][INFO ][o.e.p.PluginsService     ] [node-test] no plugins loaded
+[2020-05-08T12:24:13,333][INFO ][o.e.d.DiscoveryModule    ] [node-test] using discovery type [zen]
+[2020-05-08T12:24:14,093][INFO ][o.e.n.Node               ] [node-test] initialized
+[2020-05-08T12:24:14,093][INFO ][o.e.n.Node               ] [node-test] starting ...
+[2020-05-08T12:24:14,155][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[2020-05-08T12:24:14,325][INFO ][o.e.t.TransportService   ] [node-test] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2020-05-08T12:24:14,339][WARN ][o.e.b.BootstrapChecks    ] [node-test] initial heap size [268435456] not equal to maximum heap size [4294967296]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2020-05-08T12:24:17,413][INFO ][o.e.c.s.ClusterService   ] [node-test] new_master {node-test}{Q16kCRDnQeKDaBCRVY4FIw}{QkC49stHS7yfEF-azZUefw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2020-05-08T12:24:17,440][INFO ][o.e.h.n.Netty4HttpServerTransport] [node-test] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2020-05-08T12:24:17,443][INFO ][o.e.n.Node               ] [node-test] started
+[2020-05-08T12:24:17,450][INFO ][o.e.g.GatewayService     ] [node-test] recovered [0] indices into cluster_state
+[2020-05-08T12:24:21,259][INFO ][o.e.n.Node               ] [node-test] stopping ...
+[2020-05-08T12:28:41,359][INFO ][o.e.n.Node               ] [node-test] initializing ...
+[2020-05-08T12:28:41,455][INFO ][o.e.e.NodeEnvironment    ] [node-test] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [147.3gb], net total_space [233.4gb], spins? [unknown], types [apfs]
+[2020-05-08T12:28:41,455][INFO ][o.e.e.NodeEnvironment    ] [node-test] heap size [3.5gb], compressed ordinary object pointers [true]
+[2020-05-08T12:28:41,456][INFO ][o.e.n.Node               ] [node-test] node name [node-test], node ID [Q16kCRDnQeKDaBCRVY4FIw]
+[2020-05-08T12:28:41,457][INFO ][o.e.n.Node               ] [node-test] version[5.4.0-SNAPSHOT], pid[21013], build[Unknown/Unknown], OS[Mac OS X/10.14.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_181/25.181-b13]
+[2020-05-08T12:28:41,457][WARN ][o.e.n.Node               ] [node-test] version [5.4.0-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-05-08T12:28:45,955][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [aggs-matrix-stats]
+[2020-05-08T12:28:45,955][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [ingest-common]
+[2020-05-08T12:28:45,955][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-expression]
+[2020-05-08T12:28:45,955][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-groovy]
+[2020-05-08T12:28:45,955][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-mustache]
+[2020-05-08T12:28:45,955][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-painless]
+[2020-05-08T12:28:45,956][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [percolator]
+[2020-05-08T12:28:45,956][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [reindex]
+[2020-05-08T12:28:45,957][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [transport-netty3]
+[2020-05-08T12:28:45,957][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [transport-netty4]
+[2020-05-08T12:28:45,958][INFO ][o.e.p.PluginsService     ] [node-test] no plugins loaded
+[2020-05-08T12:28:48,456][INFO ][o.e.d.DiscoveryModule    ] [node-test] using discovery type [zen]
+[2020-05-08T12:28:49,269][INFO ][o.e.n.Node               ] [node-test] initialized
+[2020-05-08T12:28:49,269][INFO ][o.e.n.Node               ] [node-test] starting ...
+[2020-05-08T12:28:49,331][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[2020-05-08T12:28:49,495][INFO ][o.e.t.TransportService   ] [node-test] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2020-05-08T12:28:49,510][WARN ][o.e.b.BootstrapChecks    ] [node-test] initial heap size [268435456] not equal to maximum heap size [4294967296]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2020-05-08T12:28:49,819][INFO ][o.e.n.Node               ] [node-test] stopping ...

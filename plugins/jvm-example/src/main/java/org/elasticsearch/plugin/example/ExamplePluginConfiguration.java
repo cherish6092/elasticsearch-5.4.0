@@ -30,6 +30,7 @@ import java.nio.file.Path;
  * Example configuration.
  */
 public class ExamplePluginConfiguration {
+
     private final Settings customSettings;
 
     public static final Setting<String> TEST_SETTING =
