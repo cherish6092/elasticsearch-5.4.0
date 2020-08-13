@@ -23,21 +23,21 @@ import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
 import joptsimple.OptionSpecBuilder;
 import joptsimple.util.PathConverter;
+import org.apache.lucene.util.SetOnce;
 import org.elasticsearch.Build;
-import org.elasticsearch.cli.ExitCodes;
 import org.elasticsearch.cli.EnvironmentAwareCommand;
+import org.elasticsearch.cli.ExitCodes;
 import org.elasticsearch.cli.Terminal;
 import org.elasticsearch.cli.UserException;
-import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.env.Environment;
 import org.elasticsearch.monitor.jvm.JvmInfo;
 import org.elasticsearch.node.NodeValidationException;
+import org.joda.time.format.PeriodFormat;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.security.Permission;
 import java.util.Arrays;
-import java.util.Map;
 
 /**
  * This class starts elasticsearch.
@@ -81,6 +81,12 @@ class Elasticsearch extends EnvironmentAwareCommand {
             }
         });
         final Elasticsearch elasticsearch = new Elasticsearch();
+
+        //配置参数设置
+        System.setProperty("es.path.home", "/Users/yundongjiutian/workspace6/src/elasticsearch-5.4.0/core");
+        System.setProperty("java.security.policy", "/Users/yundongjiutian/workspace6/src/elasticsearch-5.4.0/config/elasticsearch.policy");
+        System.setProperty("log4j2.disable.jmx", "true");
+
         int status = main(args, elasticsearch, Terminal.DEFAULT);
         if (status != ExitCodes.OK) {
             exit(status);
@@ -101,8 +107,8 @@ class Elasticsearch extends EnvironmentAwareCommand {
                 throw new UserException(ExitCodes.USAGE, "Elasticsearch version option is mutually exclusive with any other option");
             }
             terminal.println("Version: " + org.elasticsearch.Version.CURRENT
-                    + ", Build: " + Build.CURRENT.shortHash() + "/" + Build.CURRENT.date()
-                    + ", JVM: " + JvmInfo.jvmInfo().version());
+                + ", Build: " + Build.CURRENT.shortHash() + "/" + Build.CURRENT.date()
+                + ", JVM: " + JvmInfo.jvmInfo().version());
             return;
         }
 
@@ -131,9 +137,9 @@ class Elasticsearch extends EnvironmentAwareCommand {
     /**
      * Required method that's called by Apache Commons procrun when
      * running as a service on Windows, when the service is stopped.
-     *
+     * <p>
      * http://commons.apache.org/proper/commons-daemon/procrun.html
-     *
+     * <p>
      * NOTE: If this method is renamed and/or moved, make sure to
      * update elasticsearch-service.bat!
      */

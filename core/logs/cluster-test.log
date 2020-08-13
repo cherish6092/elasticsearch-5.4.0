@@ -145,3 +145,61 @@ java.lang.IllegalArgumentException: Unknown level constant [TRACE,INFO].
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_181]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_181]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_181]
+[2020-08-13T11:28:32,385][INFO ][o.e.n.Node               ] [node-test] initializing ...
+[2020-08-13T11:28:32,496][INFO ][o.e.e.NodeEnvironment    ] [node-test] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [145.3gb], net total_space [233.4gb], spins? [unknown], types [apfs]
+[2020-08-13T11:28:32,496][INFO ][o.e.e.NodeEnvironment    ] [node-test] heap size [3.5gb], compressed ordinary object pointers [true]
+[2020-08-13T11:28:32,509][INFO ][o.e.n.Node               ] [node-test] node name [node-test], node ID [Q16kCRDnQeKDaBCRVY4FIw]
+[2020-08-13T11:28:32,510][INFO ][o.e.n.Node               ] [node-test] version[5.4.0-SNAPSHOT], pid[11477], build[Unknown/Unknown], OS[Mac OS X/10.14.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_181/25.181-b13]
+[2020-08-13T11:28:32,510][WARN ][o.e.n.Node               ] [node-test] version [5.4.0-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-08-13T11:28:37,195][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [aggs-matrix-stats]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [ingest-common]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-expression]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-groovy]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-mustache]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-painless]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [percolator]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [reindex]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [transport-netty3]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [transport-netty4]
+[2020-08-13T11:28:37,196][INFO ][o.e.p.PluginsService     ] [node-test] no plugins loaded
+[2020-08-13T11:28:39,751][INFO ][o.e.d.DiscoveryModule    ] [node-test] using discovery type [zen]
+[2020-08-13T11:28:40,644][INFO ][o.e.n.Node               ] [node-test] initialized
+[2020-08-13T11:28:40,644][INFO ][o.e.n.Node               ] [node-test] starting ...
+[2020-08-13T11:28:40,713][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[2020-08-13T11:28:45,933][INFO ][o.e.t.TransportService   ] [node-test] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2020-08-13T11:28:45,945][WARN ][o.e.b.BootstrapChecks    ] [node-test] initial heap size [268435456] not equal to maximum heap size [4294967296]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2020-08-13T11:28:49,028][INFO ][o.e.c.s.ClusterService   ] [node-test] new_master {node-test}{Q16kCRDnQeKDaBCRVY4FIw}{tzTJEaJBRH-5zBxzK5Q_bg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2020-08-13T11:28:49,052][INFO ][o.e.h.n.Netty4HttpServerTransport] [node-test] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2020-08-13T11:28:49,055][INFO ][o.e.n.Node               ] [node-test] started
+[2020-08-13T11:28:49,265][INFO ][o.e.g.GatewayService     ] [node-test] recovered [1] indices into cluster_state
+[2020-08-13T11:28:49,520][INFO ][o.e.c.r.a.AllocationService] [node-test] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[sqkb][1]] ...]).
+[2020-08-13T11:51:22,758][INFO ][o.e.n.Node               ] [node-test] stopping ...
+[2020-08-13T11:58:56,960][INFO ][o.e.n.Node               ] [node-test] initializing ...
+[2020-08-13T11:58:57,066][INFO ][o.e.e.NodeEnvironment    ] [node-test] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [145.3gb], net total_space [233.4gb], spins? [unknown], types [apfs]
+[2020-08-13T11:58:57,066][INFO ][o.e.e.NodeEnvironment    ] [node-test] heap size [3.5gb], compressed ordinary object pointers [true]
+[2020-08-13T11:58:57,081][INFO ][o.e.n.Node               ] [node-test] node name [node-test], node ID [Q16kCRDnQeKDaBCRVY4FIw]
+[2020-08-13T11:58:57,081][INFO ][o.e.n.Node               ] [node-test] version[5.4.0-SNAPSHOT], pid[11582], build[Unknown/Unknown], OS[Mac OS X/10.14.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_181/25.181-b13]
+[2020-08-13T11:58:57,081][WARN ][o.e.n.Node               ] [node-test] version [5.4.0-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2020-08-13T11:59:01,516][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [aggs-matrix-stats]
+[2020-08-13T11:59:01,517][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [ingest-common]
+[2020-08-13T11:59:01,517][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-expression]
+[2020-08-13T11:59:01,517][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-groovy]
+[2020-08-13T11:59:01,517][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-mustache]
+[2020-08-13T11:59:01,517][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [lang-painless]
+[2020-08-13T11:59:01,517][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [percolator]
+[2020-08-13T11:59:01,517][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [reindex]
+[2020-08-13T11:59:01,517][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [transport-netty3]
+[2020-08-13T11:59:01,518][INFO ][o.e.p.PluginsService     ] [node-test] loaded module [transport-netty4]
+[2020-08-13T11:59:01,518][INFO ][o.e.p.PluginsService     ] [node-test] no plugins loaded
+[2020-08-13T11:59:04,870][INFO ][o.e.d.DiscoveryModule    ] [node-test] using discovery type [zen]
+[2020-08-13T11:59:06,062][INFO ][o.e.n.Node               ] [node-test] initialized
+[2020-08-13T11:59:06,062][INFO ][o.e.n.Node               ] [node-test] starting ...
+[2020-08-13T11:59:06,120][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[2020-08-13T11:59:11,328][INFO ][o.e.t.TransportService   ] [node-test] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2020-08-13T11:59:11,341][WARN ][o.e.b.BootstrapChecks    ] [node-test] initial heap size [268435456] not equal to maximum heap size [4294967296]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2020-08-13T11:59:14,418][INFO ][o.e.c.s.ClusterService   ] [node-test] new_master {node-test}{Q16kCRDnQeKDaBCRVY4FIw}{JYVAWlqvR3e6jckvjpSoLg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2020-08-13T11:59:14,441][INFO ][o.e.h.n.Netty4HttpServerTransport] [node-test] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2020-08-13T11:59:14,443][INFO ][o.e.n.Node               ] [node-test] started
+[2020-08-13T11:59:14,718][INFO ][o.e.g.GatewayService     ] [node-test] recovered [1] indices into cluster_state
+[2020-08-13T11:59:15,070][INFO ][o.e.c.r.a.AllocationService] [node-test] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[sqkb][4]] ...]).
+[2020-08-13T12:07:26,733][INFO ][o.e.n.Node               ] [node-test] stopping ...
